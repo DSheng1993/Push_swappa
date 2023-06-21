@@ -47,8 +47,6 @@ void push(t_push_swappa **push, t_push_swappa **take, t_push_swappa **t_push, t_
 void	rotate(t_push_swappa **head, t_push_swappa **tail, int up_down)
 	//1 = giù di 1, -1 = su di 1;
 {
-	t_push_swappa *curr = *head;
-
 	if (*head == NULL)
 		return ;
 	if (up_down == 1)

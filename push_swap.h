@@ -33,15 +33,17 @@ void push(t_push_swappa **push, t_push_swappa **take, t_push_swappa **t_push, t_
 void rotate(t_push_swappa **head, t_push_swappa **tail, int up_down);
 void quicks(int *a,int first, int last);
 void pushx(t_push_swappa **pushr, t_push_swappa **take, t_push_swappa **t_push, t_push_swappa **t_take, char d);
-void main_sort(t_push_swappa **a, t_push_swappa **b, t_push_swappa **tail_a, t_push_swappa **tail_b);
+void	main_sort(t_push_swappa **a, t_push_swappa **b, t_push_swappa **tail_a,
+		t_push_swappa **tail_b, int len);
 void double_updownrotate(t_push_swappa **head, t_push_swappa **tail,t_push_swappa **head1, t_push_swappa **tail1, char *d);
 void updownrotate(t_push_swappa **head, t_push_swappa **tail, char *d);
-static size_t	nstr(const char *s, char c);
-size_t	checksizesub(const char *s, char c);
+int	nstr(const char *s, char c);
+int	checksizesub(const char *s, char c);
 char	**ft_split1(char const *s, char c);
 int addfastpath(t_push_swappa **a, int lentmp);
 int addfastpathb(t_push_swappa **a, int lentmp);
 void swapq(int* a, int*b);
 int ft_strlen(const char* s);
+int lastn(t_push_swappa **a, t_push_swappa **tail_a,int m);
 
 #endif
